@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllProducts">
+
+    <!-- Sticky Header -->
+    <!-- Sticky Header -->
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/stickyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#279931"
+        app:shapeAppearance="@style/StickyHeaderBottomCorners"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <!-- Nav Button -->
+            <ImageView
+                android:id="@+id/iv_back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back_button"
+                android:contentDescription="Manu Button"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <!-- Store Logo -->
+            <ImageView
+                android:id="@+id/iv_store_logo"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:src="@drawable/logowhite"
+                android:contentDescription="Store Logo"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <!-- RecyclerView for displaying all products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAllProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingTop="56dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_allproduct_customer"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

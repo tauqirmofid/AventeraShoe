@@ -1,0 +1,95 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#00FFFFFF">
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Success Icon -->
+        <ImageView
+            android:id="@+id/iv_success_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_success"
+            android:contentDescription="Order Successful"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Thank You Message -->
+        <TextView
+            android:id="@+id/tv_thank_you_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You for Your Order!"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/tv_order_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your order has been placed successfully. We'll notify you when it's on the way!"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <!-- OK Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:layout_marginEnd="8dp" />
+
+            <!-- See Orders Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_see_orders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="See Orders"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Customer Image -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="80dp"
+            >
+
+            <ImageView
+                android:id="@+id/customerImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_profile_placeholder"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- Customer Name -->
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anneke B."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Customer Rating -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_filled"
+                android:contentDescription="Star" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_filled"
+                android:contentDescription="Star" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_filled"
+                android:contentDescription="Star" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_filled"
+                android:contentDescription="Star" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_filled"
+                android:contentDescription="Star" />
+        </LinearLayout>
+
+        <!-- Full Review Text -->
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="179dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="none"
+            android:lineSpacingExtra="4dp"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="These Aventera Winter 2.0 shoes are truly a game-changer. They keep my feet warm even on colder days..."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Product: Aventera Winter 2.0"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

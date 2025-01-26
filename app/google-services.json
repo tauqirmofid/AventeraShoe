@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434085331201",
+    "project_id": "aventerashoe",
+    "storage_bucket": "aventerashoe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434085331201:android:02fbaf97d80a9510349b00",
+        "android_client_info": {
+          "package_name": "com.example.aventerashoe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmcXt4BmVD0z0-X9BGRwcS1wjYQe9--Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

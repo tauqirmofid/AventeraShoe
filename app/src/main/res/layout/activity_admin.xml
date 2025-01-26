@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:elevation="6dp"
+        android:layout_margin="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/admin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Product Name -->
+        <EditText
+            android:id="@+id/et_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Name"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Product Price -->
+        <EditText
+            android:id="@+id/et_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Price"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/et_product_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Stock Quantity"
+            android:inputType="number"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+        <!-- Product Description -->
+        <EditText
+            android:id="@+id/et_product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Description"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Select Image Button -->
+        <Button
+            android:id="@+id/btn_upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@drawable/image_preview_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add Product Button -->
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Navigation Buttons -->
+        <Button
+            android:id="@+id/btn_manage_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Products"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_view_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Single Product"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_view_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Orders"
+            android:backgroundTint="#673AB7"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:backgroundTint="#B60000"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".OrdersActivity"
+    android:background="#F9F9F9">
+
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/stickyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#279931"
+        app:shapeAppearance="@style/StickyHeaderBottomCorners"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <!-- Nav Button -->
+            <ImageView
+                android:id="@+id/iv_back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back_button"
+                android:contentDescription="Manu Button"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <!-- Store Logo -->
+            <ImageView
+                android:id="@+id/iv_store_logo"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:src="@drawable/logowhite"
+                android:contentDescription="Store Logo"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:paddingTop="56dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:elevation="6dp"
+        android:layout_margin="20dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/iv_edit_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/image_preview_background" />
+
+        <!-- Change Image Button -->
+        <Button
+            android:id="@+id/btn_change_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Image"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Edit Product Name -->
+        <EditText
+            android:id="@+id/et_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Product Name"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Edit Product Price -->
+        <EditText
+            android:id="@+id/et_edit_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Product Price"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+
+        <EditText
+            android:id="@+id/et_edit_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Stock Quantity"
+            android:inputType="number"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Edit Product Description -->
+        <EditText
+            android:id="@+id/et_edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Product Description"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/btn_save_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Delete Product Button -->
+        <Button
+            android:id="@+id/btn_delete_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Product"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

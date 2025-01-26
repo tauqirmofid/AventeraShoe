@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeableImageViewStyle"
+        parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.Image</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Image" parent="">
+        <!-- Define the shape appearance properties here -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+
+
+    </style>
+
+    <style name="StickyHeaderBottomCorners" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,520 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <!-- Sticky Header -->
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/stickyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#279931"
+        app:shapeAppearance="@style/StickyHeaderBottomCorners"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <!-- Nav Button -->
+            <ImageView
+                android:id="@+id/iv_back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back_button"
+                android:contentDescription="Manu Button"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <!-- Store Logo -->
+            <ImageView
+                android:id="@+id/iv_store_logo"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:src="@drawable/logowhite"
+                android:contentDescription="Store Logo"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView"
+    android:paddingTop="56dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Product Image Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/iv_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Product Image"
+                android:background="#E0E0E0" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Product Name and Subtitle -->
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aventera Winter Pro"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_product_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Warm. Stay Barefoot."
+            android:textSize="16sp"
+            android:textColor="#7F8C8D"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Price and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@drawable/price_section_background"
+                >
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT 5,499"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#27AE60"
+                android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bestprice"
+                    android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Order Now Button -->
+        <android.widget.Button
+            android:id="@+id/btn_order_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:background="@drawable/alartboxred"
+            android:textColor="@android:color/white" />
+
+
+
+
+
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+
+
+            android:background="#F5F5F5">
+
+            <!-- Easy Returns -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/grayback"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_free_delivery"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Easy returns"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within 30 days"
+                        android:textColor="#757575"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Guaranteed -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/grayback"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_marginStart="5dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_30_day_trial"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guaranteed"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Walk pain-free."
+                        android:textColor="#757575"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/redalart"
+
+
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/timer"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hurry UP! Stock is limited"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Key Features Section -->
+        <TextView
+            android:id="@+id/tv_features_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Why You'll Love It"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="16dp"
+app:cardBackgroundColor="@color/lime"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/tv_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="• Ultra-Warm Insulation\n• Lightweight Design\n• Durable Materials\n• Stylish Look\n• Perfect for Barefoot Enthusiasts"
+                android:textSize="16sp"
+                android:lineSpacingExtra="14dp"
+                android:layout_margin="4dp"
+                android:padding="5dp"
+                android:textColor="#2C3E50" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Description Section -->
+        <TextView
+            android:id="@+id/tv_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#237802"
+            android:layout_marginBottom="8dp" />
+
+
+
+
+        <!-- Description -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Natural Freedom of Movement"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="These shoes provide your feet with the natural comfort they crave, and the lightweight, breathable design makes you almost forget you're wearing them. Get ready to reconnect with every step, experiencing walking the way it’s meant to feel."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_running_image"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improve Posture and Reduce Back Pain"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aventera shoes, with their minimalist design, promote a more natural alignment of the spine. By eliminating raised heels and excessive cushioning, they encourage balanced posture and weight distribution, which may lead to reduced back and joint pain and a more confident stance."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_running_image2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended by OrthopedistsRecommended by Orthopedists"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Aventera shoes provide unmatched comfort and support for everyday use, work, and outdoor adventures. Recommended by orthopedists and podiatrists for their ergonomic design, they improve foot health and reduce pain. Step confidently, knowing your feet are in good hands."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_running_image3"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+    <!-- Sticky button container pinned to the bottom of the screen -->
+<LinearLayout
+android:id="@+id/sticky_button_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:orientation="vertical"
+android:padding="16dp"
+android:visibility="gone"
+android:background="#654CAF50">
+
+
+
+    <android.widget.Button
+        android:id="@+id/btn_sticky_order_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/alartboxred"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+    </RelativeLayout>
