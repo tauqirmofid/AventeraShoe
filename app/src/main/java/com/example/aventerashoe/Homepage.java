@@ -46,6 +46,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -523,6 +524,9 @@ public class Homepage extends AppCompatActivity {
                         productList.add(product);
                     }
                 }
+
+                // Reverse the order of the product list
+                Collections.reverse(productList);
                 customerProductAdapter.notifyDataSetChanged();
             }
 

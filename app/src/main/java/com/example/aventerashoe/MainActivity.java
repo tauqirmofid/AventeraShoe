@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                             // Navigate to HomeActivity for regular users
                             Intent intent = new Intent(MainActivity.this, Homepage.class);
                             startActivity(intent);
-                            finish(); // Close MainActivity to prevent navigating back
+                            finish(); // Cl  to prevent navigating back
                         } else {
                             Toast.makeText(this, "Please verify your email before logging in.", Toast.LENGTH_SHORT).show();
                         }

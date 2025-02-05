@@ -87,6 +87,11 @@
             android:elevation="4dp"
             android:layout_marginBottom="16dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"/>
+
         <!-- Edit Product Name -->
         <EditText
             android:id="@+id/et_edit_name"
@@ -97,6 +102,11 @@
             android:padding="12dp"
             android:textSize="16sp"
             android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"/>
 
         <!-- Edit Product Price -->
         <EditText
@@ -111,6 +121,12 @@
             android:layout_marginBottom="12dp" />
 
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock"/>
+
+
         <EditText
             android:id="@+id/et_edit_stock"
             android:layout_width="match_parent"
@@ -121,6 +137,11 @@
             android:padding="12dp"
             android:textSize="16sp"
             android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
 
         <!-- Edit Product Description -->
         <EditText
